@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/SVN-Bricks/static/css/main.dd725e86.css",
-    "main.js": "/SVN-Bricks/static/js/main.32c7121a.js",
+    "main.css": "/SVN-Bricks/static/css/main.0d4ac5c2.css",
+    "main.js": "/SVN-Bricks/static/js/main.e5b83f98.js",
     "static/js/787.128fc6e9.chunk.js": "/SVN-Bricks/static/js/787.128fc6e9.chunk.js",
     "static/media/bg.jpg": "/SVN-Bricks/static/media/bg.d98b4b952ec366e095d2.jpg",
     "index.html": "/SVN-Bricks/index.html",
-    "main.dd725e86.css.map": "/SVN-Bricks/static/css/main.dd725e86.css.map",
-    "main.32c7121a.js.map": "/SVN-Bricks/static/js/main.32c7121a.js.map",
+    "main.0d4ac5c2.css.map": "/SVN-Bricks/static/css/main.0d4ac5c2.css.map",
+    "main.e5b83f98.js.map": "/SVN-Bricks/static/js/main.e5b83f98.js.map",
     "787.128fc6e9.chunk.js.map": "/SVN-Bricks/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd725e86.css",
-    "static/js/main.32c7121a.js"
+    "static/css/main.0d4ac5c2.css",
+    "static/js/main.e5b83f98.js"
   ]
 }
