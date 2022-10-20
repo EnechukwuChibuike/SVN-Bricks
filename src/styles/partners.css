@@ -1,0 +1,13 @@
+.Partners {
+   display: flex;
+   align-items: center;
+   height: 30vh;
+   background-color: #d17d5d;
+   padding: 0px 100px;
+}
+
+.Partners p {
+   font-size: 40px;
+   font-weight: bold;
+   color: #e5d4c5;
+}

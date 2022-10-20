@@ -3,7 +3,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   height: 100vh;
+   height: 120vh;
    background-image: linear-gradient(rgba(0, 0, 0, 0.796), rgba(0, 0, 0, 0.82)),
       url(../images/bg.jpg);
    background-size: cover;
@@ -15,7 +15,6 @@
    font-size: 23px;
    font-weight: bold;
    border-bottom: 2px solid #d17d5d;
-   margin-top: 100px;
 }
 
 .intro {

@@ -3,10 +3,19 @@ import "../styles/nav.css";
 import { MdDehaze } from "react-icons/md";
 
 function Header() {
+   const [colorChange, setColorchange] = useState(false);
+   const changeNavbarColor = () => {
+      if (window.scrollY >= 80) {
+         setColorchange(true);
+      } else {
+         setColorchange(false);
+      }
+   };
+   window.addEventListener("scroll", changeNavbarColor);
    const [isNavExpanded, setIsNavExpanded] = useState(false);
    return (
       <>
-         <header>
+         <header className={colorChange ? "navbar colorChange" : "navbar"}>
             <a href="../App.js" className="logo">
                SVN
             </a>
