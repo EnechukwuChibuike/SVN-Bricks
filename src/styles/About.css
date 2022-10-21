@@ -1,3 +1,81 @@
 .about {
-   height: 90vh;
+   display: flex;
+   justify-content: space-between;
+   background-color: #e5d4c5;
+   padding: 100px;
+}
+
+.aboutImg img {
+   height: inherit;
+   width: 500px;
+}
+
+.aboutText {
+   margin-left: 150px;
+}
+
+.aboutText h3 {
+   color: #d17d5d;
+   font-weight: bolder;
+}
+
+.aboutText h1 {
+   font-size: 45px;
+   font-weight: 900;
+}
+
+.aboutText p {
+   font-size: 20px;
+   letter-spacing: 2px;
+   color: #382713;
+}
+
+.aboutBtn {
+   width: 200px;
+   height: 70px;
+   background-color: #d17d5d;
+   color: #e5d4c5;
+   border: none;
+   border-radius: 5px;
+   font-size: 17px;
+   font-weight: bold;
+   margin-top: 30px;
+   transition: 2s;
+}
+
+.aboutBtn:hover {
+   background-color: #454239;
+   transition: 2s;
+}
+
+@media screen and (max-width: 1212px) {
+   .about {
+      padding: 100px 50px;
+   }
+   .aboutText {
+      margin-left: 60px;
+   }
+   .aboutText h1 {
+      font-size: 35px;
+      font-weight: 900;
+   }
+   .aboutImg img {
+      width: 400px;
+   }
+}
+
+@media screen and (max-width: 950px) {
+   .about {
+      flex-direction: column;
+      align-items: center;
+      padding: 100px 20px;
+   }
+   .aboutImg img {
+      width: 92vw;
+      height: 600px;
+   }
+
+   .aboutText {
+      margin-left: 0px;
+   }
 }
