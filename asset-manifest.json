@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/SVN-Bricks/static/css/main.fc7efdc6.css",
-    "main.js": "/SVN-Bricks/static/js/main.ae48aeaa.js",
+    "main.css": "/SVN-Bricks/static/css/main.07cf085f.css",
+    "main.js": "/SVN-Bricks/static/js/main.5d3a9085.js",
     "static/js/787.128fc6e9.chunk.js": "/SVN-Bricks/static/js/787.128fc6e9.chunk.js",
     "static/media/background.jpg": "/SVN-Bricks/static/media/background.6304245503a9820560d9.jpg",
     "static/media/bg.jpg": "/SVN-Bricks/static/media/bg.d98b4b952ec366e095d2.jpg",
+    "static/media/southAfricanBricks.jpg": "/SVN-Bricks/static/media/southAfricanBricks.a0770f1ea8747bf83d69.jpg",
+    "static/media/americanbricks.jpg": "/SVN-Bricks/static/media/americanbricks.267ec93ac3e5b9aaa981.jpg",
+    "static/media/s-l500.jpg": "/SVN-Bricks/static/media/s-l500.d448e224137443728deb.jpg",
     "index.html": "/SVN-Bricks/index.html",
-    "main.fc7efdc6.css.map": "/SVN-Bricks/static/css/main.fc7efdc6.css.map",
-    "main.ae48aeaa.js.map": "/SVN-Bricks/static/js/main.ae48aeaa.js.map",
+    "main.07cf085f.css.map": "/SVN-Bricks/static/css/main.07cf085f.css.map",
+    "main.5d3a9085.js.map": "/SVN-Bricks/static/js/main.5d3a9085.js.map",
     "787.128fc6e9.chunk.js.map": "/SVN-Bricks/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc7efdc6.css",
-    "static/js/main.ae48aeaa.js"
+    "static/css/main.07cf085f.css",
+    "static/js/main.5d3a9085.js"
   ]
 }
