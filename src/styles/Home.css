@@ -51,6 +51,12 @@
    .intro {
       font-size: 40px;
    }
+   .welcome {
+      margin-top: -50px;
+   }
+   .home {
+      height: 110vh;
+   }
 }
 
 @media screen and (max-width: 500px) {

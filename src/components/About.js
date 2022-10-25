@@ -10,7 +10,7 @@ function About() {
             </div>
             <div className="aboutText">
                <h3>ABOUT US</h3>
-               <h1>We Provide Solutions Clients</h1>
+               <h1>We Provide Solutions For Clients</h1>
                <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Nostrum a voluptates numquam officiis deleniti praesentium

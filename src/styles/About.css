@@ -8,6 +8,7 @@
 .aboutImg img {
    height: inherit;
    width: 500px;
+   height: 600px;
 }
 
 .aboutText {
@@ -22,6 +23,7 @@
 .aboutText h1 {
    font-size: 45px;
    font-weight: 900;
+   color: #121607;
 }
 
 .aboutText p {
