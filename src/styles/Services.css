@@ -19,7 +19,6 @@
 
 .products {
    display: flex;
-   /* justify-content: center; */
    flex-wrap: wrap;
    margin-top: 50px;
 }
@@ -57,9 +56,10 @@
 }
 
 @media screen and (max-width: 700px) {
+   .products {
+      justify-content: center;
+   }
    .p_figure {
       width: 80vw;
-      justify-content: center;
-      margin: 30px 70px;
    }
 }
