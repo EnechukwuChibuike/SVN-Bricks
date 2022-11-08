@@ -1,0 +1,42 @@
+.gallery {
+   background-color: #e5d4c5;
+   height: fit-content;
+   padding: 100px 0px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.gallery h3 {
+   color: #d17d5d;
+}
+
+.gallery h1 {
+   font-size: 40px;
+   font-weight: 900;
+   color: #121607;
+   text-align: center;
+}
+
+.galleryPics {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 50%;
+}
+
+.g_figure {
+   margin: 0px 10px;
+   margin-top: 50px;
+}
+
+.g_figure img {
+   width: 300px;
+   height: 400px;
+}
+
+@media screen and (max-width: 700px) {
+   .galleryPics {
+      width: 90%;
+   }
+}

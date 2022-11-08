@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import About from "./components/About";
 import Partners from "./components/partners";
 import Services from "./components/Services";
+import Gallery from "./components/Gallery";
 
 function App() {
    return (
@@ -12,6 +13,7 @@ function App() {
          <Partners />
          <About />
          <Services />
+         <Gallery />
       </div>
    );
 }
