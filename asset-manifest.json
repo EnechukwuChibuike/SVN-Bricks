@@ -1,20 +1,27 @@
 {
   "files": {
-    "main.css": "/SVN-Bricks/static/css/main.8d1adf8a.css",
-    "main.js": "/SVN-Bricks/static/js/main.5d3a9085.js",
+    "main.css": "/SVN-Bricks/static/css/main.4625acf0.css",
+    "main.js": "/SVN-Bricks/static/js/main.92bfd5da.js",
     "static/js/787.128fc6e9.chunk.js": "/SVN-Bricks/static/js/787.128fc6e9.chunk.js",
     "static/media/background.jpg": "/SVN-Bricks/static/media/background.6304245503a9820560d9.jpg",
     "static/media/bg.jpg": "/SVN-Bricks/static/media/bg.d98b4b952ec366e095d2.jpg",
+    "static/media/image8.jpeg": "/SVN-Bricks/static/media/image8.9fdf9443aded0c06794e.jpeg",
+    "static/media/image2.jpeg": "/SVN-Bricks/static/media/image2.c433232edcdbde3c2e3e.jpeg",
+    "static/media/image5.jpeg": "/SVN-Bricks/static/media/image5.b46df8e299d962c00d52.jpeg",
+    "static/media/image7.jpeg": "/SVN-Bricks/static/media/image7.a521ffbf6dd9496c6a26.jpeg",
     "static/media/southAfricanBricks.jpg": "/SVN-Bricks/static/media/southAfricanBricks.a0770f1ea8747bf83d69.jpg",
     "static/media/americanbricks.jpg": "/SVN-Bricks/static/media/americanbricks.267ec93ac3e5b9aaa981.jpg",
+    "static/media/image6.jpeg": "/SVN-Bricks/static/media/image6.0dcd56b4775c00acf620.jpeg",
+    "static/media/image1.jpeg": "/SVN-Bricks/static/media/image1.1808347b0f7f9a144e56.jpeg",
+    "static/media/image3.jpeg": "/SVN-Bricks/static/media/image3.b730ef71f20e4906563f.jpeg",
     "static/media/s-l500.jpg": "/SVN-Bricks/static/media/s-l500.d448e224137443728deb.jpg",
     "index.html": "/SVN-Bricks/index.html",
-    "main.8d1adf8a.css.map": "/SVN-Bricks/static/css/main.8d1adf8a.css.map",
-    "main.5d3a9085.js.map": "/SVN-Bricks/static/js/main.5d3a9085.js.map",
+    "main.4625acf0.css.map": "/SVN-Bricks/static/css/main.4625acf0.css.map",
+    "main.92bfd5da.js.map": "/SVN-Bricks/static/js/main.92bfd5da.js.map",
     "787.128fc6e9.chunk.js.map": "/SVN-Bricks/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d1adf8a.css",
-    "static/js/main.5d3a9085.js"
+    "static/css/main.4625acf0.css",
+    "static/js/main.92bfd5da.js"
   ]
 }
