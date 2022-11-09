@@ -6,7 +6,7 @@ import wheelBarrow from "../images/s-l500.jpg";
 function Services() {
    return (
       <>
-         <div className="Services">
+         <div className="Services" id="Services">
             <h3>WHAT WE SELL?</h3>
             <h1>Our Products</h1>
             <section className="products">

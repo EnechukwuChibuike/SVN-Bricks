@@ -12,7 +12,7 @@ import image8 from "../images/image8.jpeg";
 
 function Gallery() {
    return (
-      <div className="gallery">
+      <div className="gallery" id="Gallery">
          <h3>OUR GALLERY</h3>
          <h1>Our Complete Projects</h1>
          <div className="galleryPics">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/nav.css";
 import { MdDehaze } from "react-icons/md";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Header() {
    const [colorChange, setColorchange] = useState(false);
@@ -16,28 +17,40 @@ function Header() {
    return (
       <>
          <header className={colorChange ? "navbar colorChange" : "navbar"}>
-            <a href="../App.js" className="logo">
+            <a href="/" className="logo">
                SVN
             </a>
             <nav className={isNavExpanded ? "nav menu" : "nav"}>
-               <div>
-                  <a href="./Home.js">Home</a>
-               </div>
-               <div>
-                  <a href="./About.js">About</a>
-               </div>
-               <div>
-                  <a href="./Services.js">Services</a>
-               </div>
-               <div>
-                  <a href="./Projects.js">Projects</a>
-               </div>
-               <div>
-                  <a href="./Blog.js">Blog</a>
-               </div>
-               <div>
-                  <a href="./Contact.js">Contact</a>
-               </div>
+               <AnchorLink href="#Home">
+                  <div>
+                     <a href="/">Home</a>
+                  </div>
+               </AnchorLink>
+               <AnchorLink href="#About">
+                  <div>
+                     <a href="/">About</a>
+                  </div>
+               </AnchorLink>
+               <AnchorLink href="#Services">
+                  <div>
+                     <a href="/">Services</a>
+                  </div>
+               </AnchorLink>
+               <AnchorLink href="#Projects">
+                  <div>
+                     <a href="/">Projects</a>
+                  </div>
+               </AnchorLink>
+               <AnchorLink href="#Gallery">
+                  <div>
+                     <a href="/">Gallery</a>
+                  </div>
+               </AnchorLink>
+               <AnchorLink href="#Contact">
+                  <div>
+                     <a href="/">Contact</a>
+                  </div>
+               </AnchorLink>
             </nav>
             <button
                className="menuIcon"

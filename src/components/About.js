@@ -4,7 +4,7 @@ import abtImg from "../images/background.jpg";
 function About() {
    return (
       <>
-         <div className="about">
+         <div className="about" id="About">
             <div className="aboutImg">
                <img src={abtImg} alt="img" />
             </div>

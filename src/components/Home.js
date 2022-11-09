@@ -1,15 +1,16 @@
-import Header from "./nav.js";
 import "../styles/Home.css";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Home() {
    return (
       <>
-         <Header />
-         <div className="home">
+         <div className="home" id="Home">
             <p className="welcome">Welcome to SVN Bricks</p>
             <p className="intro">Building Zero Emission</p>
             <p className="intro">With SVN Bricks</p>
-            <button className="contactBtn">Contact Now</button>
+            <AnchorLink href="#Contact">
+               <button className="contactBtn">Contact Now</button>
+            </AnchorLink>
          </div>
       </>
    );
