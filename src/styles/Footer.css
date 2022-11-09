@@ -57,6 +57,10 @@
 }
 
 @media screen and (max-width: 700px) {
+   .Footer {
+      padding: 100px 30px 30px 30px;
+   }
+
    .footmain {
       flex-direction: column;
       align-items: center;
@@ -71,6 +75,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+   }
+
+   .location {
+      width: inherit;
    }
 
    .contactus h2 {
