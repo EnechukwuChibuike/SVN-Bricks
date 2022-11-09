@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/SVN-Bricks/static/css/main.335b8ec3.css",
+    "main.css": "/SVN-Bricks/static/css/main.22d91057.css",
     "main.js": "/SVN-Bricks/static/js/main.a58755c1.js",
     "static/js/787.128fc6e9.chunk.js": "/SVN-Bricks/static/js/787.128fc6e9.chunk.js",
     "static/media/background.jpg": "/SVN-Bricks/static/media/background.6304245503a9820560d9.jpg",
@@ -32,12 +32,12 @@
     "static/media/outline-icons.woff": "/SVN-Bricks/static/media/outline-icons.ddae9b1ba9b0b42f5880.woff",
     "static/media/outline-icons.woff2": "/SVN-Bricks/static/media/outline-icons.687a4990ea22bb1a49d4.woff2",
     "index.html": "/SVN-Bricks/index.html",
-    "main.335b8ec3.css.map": "/SVN-Bricks/static/css/main.335b8ec3.css.map",
+    "main.22d91057.css.map": "/SVN-Bricks/static/css/main.22d91057.css.map",
     "main.a58755c1.js.map": "/SVN-Bricks/static/js/main.a58755c1.js.map",
     "787.128fc6e9.chunk.js.map": "/SVN-Bricks/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.335b8ec3.css",
+    "static/css/main.22d91057.css",
     "static/js/main.a58755c1.js"
   ]
 }
