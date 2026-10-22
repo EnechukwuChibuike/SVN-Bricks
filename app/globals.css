@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+   --color-brick-50: #fbf4f1;
+   --color-brick-100: #f5e4dc;
+   --color-brick-200: #ebc6b5;
+   --color-brick-500: #c4643f;
+   --color-brick-600: #a94f2d;
+   --color-brick-700: #8a3f24;
+   --color-brick-800: #6b311d;
+
+   --color-cream: #f8f4ef;
+   --color-charcoal: #1b1714;
+
+   --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   background: #fff;
+   color: var(--color-stone-700);
+}
+
+@utility site-container {
+   margin-inline: auto;
+   width: 100%;
+   max-width: 80rem;
+   padding-inline: 1.25rem;
+
+   @media (width >= 64rem) {
+      padding-inline: 2rem;
+   }
+}
+
+@utility btn {
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   border-radius: 0.5rem;
+   padding: 0.8rem 1.4rem;
+   font-size: 0.95rem;
+   font-weight: 600;
+   transition:
+      background-color 0.2s,
+      color 0.2s,
+      border-color 0.2s;
+   cursor: pointer;
+}
+
+@utility btn-primary {
+   background-color: var(--color-brick-600);
+   color: #fff;
+
+   &:hover {
+      background-color: var(--color-brick-700);
+   }
+}
+
+@utility btn-outline {
+   border: 1px solid var(--color-stone-300);
+   color: var(--color-charcoal);
+
+   &:hover {
+      border-color: var(--color-charcoal);
+   }
+}
+
+@utility btn-light {
+   background-color: #fff;
+   color: var(--color-charcoal);
+
+   &:hover {
+      background-color: var(--color-cream);
+   }
+}
+
+@utility btn-ghost-light {
+   border: 1px solid rgb(255 255 255 / 0.35);
+   color: #fff;
+
+   &:hover {
+      background-color: rgb(255 255 255 / 0.1);
+   }
+}
+
+@utility eyebrow {
+   font-size: 0.8rem;
+   font-weight: 700;
+   letter-spacing: 0.14em;
+   text-transform: uppercase;
+   color: var(--color-brick-600);
+}
