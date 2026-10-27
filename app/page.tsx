@@ -59,9 +59,9 @@ export default function HomePage() {
                      <span className="text-brick-500">stand the test of time.</span>
                   </h1>
                   <p className="mt-6 max-w-xl text-lg leading-relaxed text-stone-300">
-                     SVN Group supplies premium American and South African facing
-                     bricks and heavy-duty wheelbarrow pans to builders,
-                     developers and homeowners across Nigeria.
+                     SVN Group supplies premium American, South African and Spanish
+                     facing bricks, plus Ericson, KMS and Omega wheelbarrow pans, to
+                     builders, developers and homeowners across Nigeria.
                   </p>
                   <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                      <Link href="/contact" className="btn btn-primary">

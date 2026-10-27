@@ -1,9 +1,10 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { useSearchParams } from "next/navigation";
 import emailjs from "@emailjs/browser";
 import { LuCircleCheck, LuLoaderCircle, LuSend } from "react-icons/lu";
-import { products } from "@/lib/site";
+import { productCategories, products } from "@/lib/site";
 
 const SERVICE_ID = "service_2e6ajog";
 const TEMPLATE_ID = "template_rgi92dw";
@@ -17,6 +18,10 @@ const labelClass = "mb-2 block text-sm font-semibold text-charcoal";
 
 export default function ContactForm() {
    const [status, setStatus] = useState<Status>("idle");
+
+   // Pre-select the product when arriving from a "Get a Quote" link.
+   const requested = useSearchParams().get("product");
+   const initialProduct = products.some((p) => p.name === requested) ? requested! : "";
 
    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
@@ -82,12 +87,18 @@ export default function ContactForm() {
             <label htmlFor="product" className={labelClass}>
                Product of interest
             </label>
-            <select id="product" name="product" defaultValue="" className={fieldClass}>
+            <select id="product" name="product" defaultValue={initialProduct} className={fieldClass}>
                <option value="">Select a product</option>
-               {products.map(({ slug, name }) => (
-                  <option key={slug} value={name}>
-                     {name}
-                  </option>
+               {productCategories.map((category) => (
+                  <optgroup key={category.slug} label={category.name}>
+                     {products
+                        .filter((p) => p.category === category.name)
+                        .map(({ slug, name }) => (
+                           <option key={slug} value={name}>
+                              {name}
+                           </option>
+                        ))}
+                  </optgroup>
                ))}
                <option value="Other">Other / Not sure</option>
             </select>

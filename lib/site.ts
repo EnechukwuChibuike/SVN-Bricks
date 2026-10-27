@@ -5,6 +5,9 @@ export const site = {
       "SVN Group is Nigeria's leading distributor of quality facing bricks and wheelbarrow pans, supplying builders, contractors and homeowners nationwide.",
    phone: "+234 803 316 6418",
    phoneHref: "tel:+2348033166418",
+   whatsappHref: `https://wa.me/2348033166418?text=${encodeURIComponent(
+      "Hello SVN Group, I'd like to make an enquiry about your products."
+   )}`,
    email: "svnbricksltd@gmail.com",
    hours: "Mon – Sat, 9:00am – 5:00pm",
    offices: [
@@ -28,39 +31,123 @@ export const navLinks = [
    { href: "/contact", label: "Contact" },
 ];
 
-export const products = [
+export type Product = {
+   slug: string;
+   name: string;
+   category: "Facing Bricks" | "Wheelbarrow Pans";
+   image: string;
+   summary: string;
+   description: string;
+   uses: string[];
+   colors?: { name: string; hex: string }[];
+};
+
+export const productCategories = [
+   {
+      slug: "facing-bricks",
+      name: "Facing Bricks" as const,
+      title: "Facing bricks in every style and colour",
+      description:
+         "Premium facing bricks for façades, fences, columns and feature walls — choose the finish that suits your design.",
+   },
+   {
+      slug: "wheelbarrow-pans",
+      name: "Wheelbarrow Pans" as const,
+      title: "Trusted wheelbarrow pan brands",
+      description:
+         "Strong galvanised steel pans from the brands builders know, available singly or in bulk.",
+   },
+];
+
+export const products: Product[] = [
    {
       slug: "american-bricks",
       name: "American Bricks",
       category: "Facing Bricks",
-      image: "/images/americanbricks.jpg",
+      image: "/images/products/americanbricks.png",
       summary:
-         "Clean-lined facing bricks in warm earth tones for modern façades, fences and feature walls.",
+         "Clean-lined facing bricks with a fine-grained finish, available in six colours.",
       description:
-         "Our American bricks give buildings a crisp, contemporary finish. Uniform in size and colour, they lay quickly and keep their look for years, making them a favourite for residential estates, commercial fronts and boundary walls.",
-      uses: ["Building façades", "Fences & gate pillars", "Feature & interior walls"],
+         "American bricks give buildings a crisp, contemporary finish. Their even size and colour make them quick to lay and ideal for residential estates, commercial fronts and boundary walls.",
+      uses: ["Building façades", "Fences & gate pillars", "Feature walls"],
+      colors: [
+         { name: "Red", hex: "#9b4a32" },
+         { name: "Cream", hex: "#e8d9a8" },
+         { name: "Buff", hex: "#d6a679" },
+         { name: "Brown", hex: "#8a3f24" },
+         { name: "Grey", hex: "#8c8f93" },
+         { name: "Terracotta", hex: "#b8705a" },
+      ],
    },
    {
       slug: "south-african-bricks",
       name: "South African Bricks",
       category: "Facing Bricks",
-      image: "/images/southAfricanBricks.jpg",
+      image: "/images/products/southafricanbricks.png",
       summary:
-         "Richly textured, multi-tone bricks that bring a classic, premium character to any build.",
+         "Rustic, multi-tone bricks with a rich speckled texture for a classic, premium look.",
       description:
-         "South African bricks are known for their speckled, multi-tone texture and natural depth of colour. They deliver a timeless, high-end finish on duplexes, mansions and landmark projects — with excellent durability in Nigeria's climate.",
+         "South African bricks are loved for their rugged texture and natural blends of red, brown, grey and charcoal. No two bricks are quite the same, giving duplexes, mansions and landmark projects a timeless character.",
       uses: ["Duplexes & mansions", "Columns & porches", "Commercial buildings"],
+      colors: [
+         { name: "Smoked Red", hex: "#7a4a3a" },
+         { name: "Rustic Orange", hex: "#b4552f" },
+         { name: "Grey Blend", hex: "#8a8079" },
+         { name: "Dark Flashed", hex: "#4a2f25" },
+         { name: "Charcoal Tan", hex: "#a07a62" },
+      ],
    },
    {
-      slug: "wheelbarrow-pans",
-      name: "Wheelbarrow Pans",
-      category: "Site Equipment",
-      image: "/images/s-l500.jpg",
+      slug: "spanish-bricks",
+      name: "Spanish Bricks",
+      category: "Facing Bricks",
+      image: "/images/products/spanish.png",
       summary:
-         "Heavy-duty galvanised wheelbarrow pans built for daily use on busy construction sites.",
+         "Sleek modern bricks in smooth and textured finishes, from classic red to bold black and white.",
       description:
-         "Our galvanised steel wheelbarrow pans resist rust and stand up to sand, gravel, blocks and wet concrete day after day. Available for retail buyers and in bulk for contractors, hardware stores and resellers.",
-      uses: ["Construction sites", "Hardware stores & resellers", "Farms & landscaping"],
+         "Spanish bricks offer a clean, architectural look with a choice of smooth and textured faces. Their wide colour range — including black and white — makes them a designer favourite for modern homes and interiors.",
+      uses: ["Modern façades", "Interior feature walls", "Accent bands & trims"],
+      colors: [
+         { name: "Brown", hex: "#9a5a3e" },
+         { name: "Black", hex: "#1f1f1f" },
+         { name: "Peach", hex: "#e2a875" },
+         { name: "Cream", hex: "#e9e2c8" },
+         { name: "White", hex: "#f2f2f2" },
+         { name: "Red", hex: "#a4482f" },
+      ],
+   },
+   {
+      slug: "ericson",
+      name: "Ericson",
+      category: "Wheelbarrow Pans",
+      image: "/images/products/ericson.png",
+      summary:
+         "A dependable galvanised wheelbarrow pan for everyday construction work.",
+      description:
+         "The Ericson pan is a popular all-rounder on Nigerian building sites. Its deep, rounded galvanised body carries sand, gravel, blocks and wet concrete with ease.",
+      uses: ["Construction sites", "Hardware resellers", "Farms & landscaping"],
+   },
+   {
+      slug: "kms",
+      name: "KMS",
+      category: "Wheelbarrow Pans",
+      image: "/images/products/kms.png",
+      summary:
+         "Heavy-duty galvanised pan built for demanding, high-volume site use.",
+      description:
+         "KMS pans are built for contractors who need strength day after day. The heavy galvanised steel body resists rust and denting under constant loading.",
+      uses: ["Contractors & builders", "Concrete & mortar work", "Bulk site supply"],
+   },
+   {
+      slug: "omega",
+      name: "Omega",
+      category: "Wheelbarrow Pans",
+      image: "/images/products/omega.png",
+      summary:
+         "A strong, great-value galvanised pan for builders, farms and resellers.",
+      description:
+         "Omega pans combine solid galvanised construction with excellent value, making them a favourite with hardware stores and buyers ordering in quantity.",
+      uses: ["Hardware stores", "Farms & gardens", "General site work"],
    },
 ];
 

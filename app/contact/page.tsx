@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { LuClock, LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 import PageHeader from "@/components/PageHeader";
 import ContactForm from "@/components/ContactForm";
@@ -60,7 +61,9 @@ export default function ContactPage() {
                <p className="mt-2 mb-8 text-stone-600">
                   Fill in the form and our sales team will get back to you.
                </p>
-               <ContactForm />
+               <Suspense>
+                  <ContactForm />
+               </Suspense>
             </div>
 
             <div className="flex flex-col gap-6 lg:col-span-2">

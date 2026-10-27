@@ -58,8 +58,8 @@ export default function AboutPage() {
                <SectionHeading eyebrow="Who We Are" title="A supplier built on trust and quality" />
                <div className="mt-6 space-y-5 text-lg leading-relaxed text-stone-600">
                   <p>
-                     SVN Group supplies premium American and South African facing
-                     bricks, along with durable wheelbarrow pans, to construction
+                     SVN Group supplies premium American, South African and Spanish
+                     facing bricks, along with Ericson, KMS and Omega wheelbarrow pans, to construction
                      projects of every size. Our customers include private
                      homeowners, contractors, real-estate developers and
                      hardware resellers.

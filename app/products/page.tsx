@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import Link from "next/link";
-import { LuArrowRight, LuCheck, LuPackage, LuTruck, LuWarehouse } from "react-icons/lu";
+import { LuPackage, LuTruck, LuWarehouse } from "react-icons/lu";
 import PageHeader from "@/components/PageHeader";
 import SectionHeading from "@/components/SectionHeading";
 import CtaBanner from "@/components/CtaBanner";
-import { products } from "@/lib/site";
+import { ProductDetailCard } from "@/components/ProductCard";
+import { productCategories, products } from "@/lib/site";
 
 export const metadata: Metadata = {
    title: "Products",
    description:
-      "American bricks, South African bricks and galvanised wheelbarrow pans from SVN Group — available retail and in bulk across Nigeria.",
+      "American, South African and Spanish facing bricks, plus Ericson, KMS and Omega wheelbarrow pans from SVN Group — available retail and in bulk across Nigeria.",
 };
 
 const ordering = [
@@ -36,56 +35,49 @@ export default function ProductsPage() {
       <>
          <PageHeader
             eyebrow="Products"
-            title="Facing bricks and site equipment you can rely on"
-            description="Choose from our range of premium bricks and heavy-duty wheelbarrow pans — available for retail buyers, contractors and resellers."
+            title="Facing bricks and wheelbarrows you can rely on"
+            description="Three ranges of premium facing bricks in a wide choice of colours, and wheelbarrow pans from the brands builders trust — for retail buyers, contractors and resellers."
             image="/images/image8.jpeg"
          />
 
-         <section className="site-container space-y-20 py-20 lg:space-y-28 lg:py-28">
-            {products.map((product, i) => (
-               <article
-                  key={product.slug}
-                  id={product.slug}
-                  className="grid scroll-mt-32 items-center gap-10 lg:grid-cols-2 lg:gap-20"
-               >
-                  <div
-                     className={`relative aspect-4/3 overflow-hidden rounded-2xl bg-stone-100 ${
-                        i % 2 === 1 ? "lg:order-last" : ""
-                     }`}
+         <nav className="sticky top-18 z-40 border-b border-stone-200 bg-white/95 backdrop-blur md:top-28">
+            <div className="site-container flex gap-2 overflow-x-auto py-3">
+               {productCategories.map(({ slug, name }) => (
+                  <a
+                     key={slug}
+                     href={`#${slug}`}
+                     className="shrink-0 rounded-full border border-stone-300 px-4 py-2 text-sm font-semibold text-charcoal transition-colors hover:border-brick-600 hover:text-brick-600"
                   >
-                     <Image
-                        src={product.image}
-                        alt={product.name}
-                        fill
-                        sizes="(max-width: 1024px) 100vw, 50vw"
-                        className="object-cover"
-                     />
-                  </div>
-                  <div>
-                     <p className="eyebrow">{product.category}</p>
-                     <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-charcoal sm:text-4xl">
-                        {product.name}
-                     </h2>
-                     <p className="mt-5 text-lg leading-relaxed text-stone-600">
-                        {product.description}
-                     </p>
-                     <h3 className="mt-8 font-semibold text-charcoal">Ideal for</h3>
-                     <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-                        {product.uses.map((use) => (
-                           <li key={use} className="flex items-center gap-3 text-stone-700">
-                              <LuCheck className="shrink-0 text-brick-600" /> {use}
-                           </li>
-                        ))}
-                     </ul>
-                     <Link href="/contact" className="btn btn-primary mt-9">
-                        Get a Quote <LuArrowRight />
-                     </Link>
-                  </div>
-               </article>
-            ))}
-         </section>
+                     {name}
+                  </a>
+               ))}
+            </div>
+         </nav>
 
-         <section className="bg-cream">
+         {productCategories.map((category, i) => (
+            <section
+               key={category.slug}
+               id={category.slug}
+               className={`scroll-mt-44 ${i % 2 === 1 ? "bg-cream" : ""}`}
+            >
+               <div className="site-container py-20 lg:py-24">
+                  <SectionHeading
+                     eyebrow={category.name}
+                     title={category.title}
+                     description={category.description}
+                  />
+                  <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                     {products
+                        .filter((p) => p.category === category.name)
+                        .map((product) => (
+                           <ProductDetailCard key={product.slug} product={product} />
+                        ))}
+                  </div>
+               </div>
+            </section>
+         ))}
+
+         <section className="border-t border-stone-200">
             <div className="site-container py-20">
                <SectionHeading
                   align="center"
