@@ -39,7 +39,15 @@ export type Product = {
    summary: string;
    description: string;
    uses: string[];
-   colors?: { name: string; hex: string }[];
+   colors?: ProductColor[];
+};
+
+export type ProductColor = {
+   name: string;
+   hex: string;
+   finish?: "Smooth" | "Textured";
+   /** Photo of this colour on its own; shown when its swatch is selected. */
+   image?: string;
 };
 
 export const productCategories = [
@@ -105,15 +113,15 @@ export const products: Product[] = [
       summary:
          "Sleek modern bricks in smooth and textured finishes, from classic red to bold black and white.",
       description:
-         "Spanish bricks offer a clean, architectural look with a choice of smooth and textured faces. Their wide colour range — including black and white — makes them a designer favourite for modern homes and interiors.",
+         "Spanish bricks offer a clean, architectural look with a choice of smooth and textured faces. Their wide colour range — from dark ash to pure white — makes them a designer favourite for modern homes and interiors.",
       uses: ["Modern façades", "Interior feature walls", "Accent bands & trims"],
       colors: [
-         { name: "Brown", hex: "#9a5a3e" },
-         { name: "Black", hex: "#1f1f1f" },
-         { name: "Peach", hex: "#e2a875" },
-         { name: "Cream", hex: "#e9e2c8" },
-         { name: "White", hex: "#f2f2f2" },
-         { name: "Red", hex: "#a4482f" },
+         { name: "Brown", hex: "#9b7068", finish: "Smooth", image: "/images/products/spanish/brown.png" },
+         { name: "Dark Ash", hex: "#4f4f51", finish: "Textured", image: "/images/products/spanish/darkash.png" },
+         { name: "Peach", hex: "#dea88d", finish: "Textured", image: "/images/products/spanish/peach.png" },
+         { name: "Milk White", hex: "#e9e2d0", finish: "Smooth", image: "/images/products/spanish/milkwhite.png" },
+         { name: "White", hex: "#eceef2", finish: "Textured", image: "/images/products/spanish/white.png" },
+         { name: "Brown Red", hex: "#c5745e", finish: "Smooth", image: "/images/products/spanish/brownred.png" },
       ],
    },
    {

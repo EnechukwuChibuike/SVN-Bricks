@@ -3,7 +3,7 @@ import { LuPackage, LuTruck, LuWarehouse } from "react-icons/lu";
 import PageHeader from "@/components/PageHeader";
 import SectionHeading from "@/components/SectionHeading";
 import CtaBanner from "@/components/CtaBanner";
-import { ProductDetailCard } from "@/components/ProductCard";
+import ProductDetailCard from "@/components/ProductDetailCard";
 import { productCategories, products } from "@/lib/site";
 
 export const metadata: Metadata = {
