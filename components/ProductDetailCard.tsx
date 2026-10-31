@@ -21,7 +21,7 @@ export default function ProductDetailCard({ product }: { product: Product }) {
          <ProductImage
             product={product}
             src={active?.image}
-            alt={active ? `${product.name} in ${active.name}` : undefined}
+            alt={active?.image ? `${product.name} in ${active.name}` : undefined}
          />
          <div className="flex flex-1 flex-col p-6 sm:p-8">
             <h3 className="text-2xl font-bold text-charcoal">{product.name}</h3>
